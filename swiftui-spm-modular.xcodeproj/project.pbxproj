@@ -44,6 +44,7 @@
 		24E745CE2B2F725100BFDD05 /* swiftui-spm-modularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-spm-modularUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E745D22B2F725100BFDD05 /* swiftui_spm_modularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_spm_modularUITests.swift; sourceTree = "<group>"; };
 		24E745D42B2F725100BFDD05 /* swiftui_spm_modularUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_spm_modularUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		24E745E12B2F759600BFDD05 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		24E745AB2B2F724E00BFDD05 = {
 			isa = PBXGroup;
 			children = (
+				24E745E12B2F759600BFDD05 /* .gitignore */,
 				24E745B62B2F724E00BFDD05 /* swiftui-spm-modular */,
 				24E745C72B2F725100BFDD05 /* swiftui-spm-modularTests */,
 				24E745D12B2F725100BFDD05 /* swiftui-spm-modularUITests */,
