@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2461F37A2B2F93A60084D4AA /* UserDetail in Frameworks */ = {isa = PBXBuildFile; productRef = 2461F3792B2F93A60084D4AA /* UserDetail */; };
 		24E745B82B2F724E00BFDD05 /* swiftui_spm_modularApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745B72B2F724E00BFDD05 /* swiftui_spm_modularApp.swift */; };
-		24E745BA2B2F724E00BFDD05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745B92B2F724E00BFDD05 /* ContentView.swift */; };
+		24E745BA2B2F724E00BFDD05 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745B92B2F724E00BFDD05 /* AppView.swift */; };
 		24E745BC2B2F725100BFDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E745BB2B2F725100BFDD05 /* Assets.xcassets */; };
 		24E745BF2B2F725100BFDD05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E745BE2B2F725100BFDD05 /* Preview Assets.xcassets */; };
 		24E745C92B2F725100BFDD05 /* swiftui_spm_modularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745C82B2F725100BFDD05 /* swiftui_spm_modularTests.swift */; };
@@ -37,9 +37,10 @@
 
 /* Begin PBXFileReference section */
 		2461F3782B2F92150084D4AA /* UserDetail */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UserDetail; path = "swiftui-spm-modular/UserDetail"; sourceTree = "<group>"; };
+		2461F37B2B2FA6380084D4AA /* Styleguide */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Styleguide; path = "swiftui-spm-modular/Styleguide"; sourceTree = "<group>"; };
 		24E745B42B2F724E00BFDD05 /* swiftui-spm-modular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-spm-modular.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E745B72B2F724E00BFDD05 /* swiftui_spm_modularApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_spm_modularApp.swift; sourceTree = "<group>"; };
-		24E745B92B2F724E00BFDD05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24E745B92B2F724E00BFDD05 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		24E745BB2B2F725100BFDD05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24E745BE2B2F725100BFDD05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24E745C42B2F725100BFDD05 /* swiftui-spm-modularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-spm-modularTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				24E745E12B2F759600BFDD05 /* .gitignore */,
+				2461F37B2B2FA6380084D4AA /* Styleguide */,
 				24E745E42B2F7EAB00BFDD05 /* User */,
 				2461F3782B2F92150084D4AA /* UserDetail */,
 				24E745E32B2F7C2500BFDD05 /* Domain */,
@@ -110,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				24E745B72B2F724E00BFDD05 /* swiftui_spm_modularApp.swift */,
-				24E745B92B2F724E00BFDD05 /* ContentView.swift */,
+				24E745B92B2F724E00BFDD05 /* AppView.swift */,
 				24E745BB2B2F725100BFDD05 /* Assets.xcassets */,
 				24E745BD2B2F725100BFDD05 /* Preview Content */,
 			);
@@ -283,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24E745BA2B2F724E00BFDD05 /* ContentView.swift in Sources */,
+				24E745BA2B2F724E00BFDD05 /* AppView.swift in Sources */,
 				24E745B82B2F724E00BFDD05 /* swiftui_spm_modularApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

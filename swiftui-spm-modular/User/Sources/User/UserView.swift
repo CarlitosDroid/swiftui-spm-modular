@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Styleguide
 
 public struct UserView: View {
     
@@ -21,7 +22,7 @@ public struct UserView: View {
         .safeAreaInset(edge: .top, spacing: 0.0) {
             EmptyView()
                 .frame(height: 1.0)
-                .background(Color.green)
+                .background(Colors.metallicSeaweed.swiftUIColor)
         }
     }
     

@@ -6,24 +6,12 @@
 //
 
 import SwiftUI
-import User
-import UserDetail
 
 @main
 struct swiftui_spm_modularApp: App {
-    
-    @State private var showingPaymentScreen = true
-    
     var body: some Scene {
         WindowGroup {
-            NavigationView(content: {
-                ZStack(content: {
-                    UserView(viewModel: UserViewModel())
-                    NavigationLink("", isActive: $showingPaymentScreen) {
-                        UserDetailView()
-                    }
-                })
-            })
+            AppView()
         }
     }
 }
