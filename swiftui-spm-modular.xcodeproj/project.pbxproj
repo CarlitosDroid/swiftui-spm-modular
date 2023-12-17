@@ -14,6 +14,7 @@
 		24E745C92B2F725100BFDD05 /* swiftui_spm_modularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745C82B2F725100BFDD05 /* swiftui_spm_modularTests.swift */; };
 		24E745D32B2F725100BFDD05 /* swiftui_spm_modularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745D22B2F725100BFDD05 /* swiftui_spm_modularUITests.swift */; };
 		24E745D52B2F725100BFDD05 /* swiftui_spm_modularUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745D42B2F725100BFDD05 /* swiftui_spm_modularUITestsLaunchTests.swift */; };
+		24E745E72B2F810100BFDD05 /* User in Frameworks */ = {isa = PBXBuildFile; productRef = 24E745E62B2F810100BFDD05 /* User */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		24E745E12B2F759600BFDD05 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		24E745E22B2F7A1F00BFDD05 /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Data; path = "swiftui-spm-modular/Data"; sourceTree = "<group>"; };
 		24E745E32B2F7C2500BFDD05 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Domain; path = "swiftui-spm-modular/Domain"; sourceTree = "<group>"; };
+		24E745E42B2F7EAB00BFDD05 /* User */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = User; path = "swiftui-spm-modular/User"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E745E72B2F810100BFDD05 /* User in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +81,14 @@
 			isa = PBXGroup;
 			children = (
 				24E745E12B2F759600BFDD05 /* .gitignore */,
+				24E745E42B2F7EAB00BFDD05 /* User */,
 				24E745E32B2F7C2500BFDD05 /* Domain */,
 				24E745E22B2F7A1F00BFDD05 /* Data */,
 				24E745B62B2F724E00BFDD05 /* swiftui-spm-modular */,
 				24E745C72B2F725100BFDD05 /* swiftui-spm-modularTests */,
 				24E745D12B2F725100BFDD05 /* swiftui-spm-modularUITests */,
 				24E745B52B2F724E00BFDD05 /* Products */,
+				24E745E52B2F810100BFDD05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +138,13 @@
 			path = "swiftui-spm-modularUITests";
 			sourceTree = "<group>";
 		};
+		24E745E52B2F810100BFDD05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +161,9 @@
 			dependencies = (
 			);
 			name = "swiftui-spm-modular";
+			packageProductDependencies = (
+				24E745E62B2F810100BFDD05 /* User */,
+			);
 			productName = "swiftui-spm-modular";
 			productReference = 24E745B42B2F724E00BFDD05 /* swiftui-spm-modular.app */;
 			productType = "com.apple.product-type.application";
@@ -588,6 +603,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24E745E62B2F810100BFDD05 /* User */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = User;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24E745AC2B2F724E00BFDD05 /* Project object */;
 }

@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import User
 
 @main
 struct swiftui_spm_modularApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UserView(viewModel: UserViewModel())
         }
     }
 }
