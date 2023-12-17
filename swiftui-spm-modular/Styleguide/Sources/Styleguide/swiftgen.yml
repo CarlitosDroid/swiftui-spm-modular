@@ -23,3 +23,15 @@ xcassets:
           forceProvidesNamespaces: true
           publicAccess: true
         output: Images.swift
+
+## Generate constants for custom fonts
+fonts:
+  inputs:
+    - Fonts
+  outputs:
+    - templateName: swift5
+      params:
+        enumName: Fonts
+        forceProvidesNamespaces: true
+        publicAccess: true
+      output: Fonts.swift

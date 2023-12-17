@@ -11,7 +11,7 @@ import UserDetail
 
 struct AppView: View {
     
-    @State private var showingPaymentScreen = true
+    @State private var showingPaymentScreen = false
     
     var body: some View {
         NavigationView(content: {

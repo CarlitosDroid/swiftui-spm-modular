@@ -36,6 +36,7 @@ private extension UserView {
         Section {
             Text("Welcome!")
                 .multilineTextAlignment(.center)
+                .font(Fonts.Inter.semiBold.swiftUIFont(size: 32))
             UserGreetingView()
         }
     }
