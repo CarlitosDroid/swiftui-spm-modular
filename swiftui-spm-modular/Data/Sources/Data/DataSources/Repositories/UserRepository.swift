@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Domain
 
 public class UserRepository {
     
@@ -13,6 +14,23 @@ public class UserRepository {
     
     public init(userMemory: UserMemory) {
         self.userMemory = userMemory
+    }
+    
+    public func getUserFromMemory() -> [User] {
+        return userMemory.usersData.map { (userData: UserData) in
+            User(
+                name: userData.name,
+                age: userData.age
+            )
+        }
+    }
+    
+    public func getUserFromDataBase() -> [User] {
+        return []
+    }
+    
+    public func getUserFromRemote() -> [User] {
+        return []
     }
         
 }
