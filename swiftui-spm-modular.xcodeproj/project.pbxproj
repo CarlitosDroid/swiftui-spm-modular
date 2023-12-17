@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2461F37A2B2F93A60084D4AA /* UserDetail in Frameworks */ = {isa = PBXBuildFile; productRef = 2461F3792B2F93A60084D4AA /* UserDetail */; };
+		2461F37E2B2FAE690084D4AA /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 2461F37D2B2FAE690084D4AA /* Factory */; };
+		2461F3822B2FAED80084D4AA /* Container+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2461F3812B2FAED80084D4AA /* Container+Injection.swift */; };
+		2461F3842B2FB0080084D4AA /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 2461F3832B2FB0080084D4AA /* Data */; };
 		24E745B82B2F724E00BFDD05 /* swiftui_spm_modularApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745B72B2F724E00BFDD05 /* swiftui_spm_modularApp.swift */; };
 		24E745BA2B2F724E00BFDD05 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745B92B2F724E00BFDD05 /* AppView.swift */; };
 		24E745BC2B2F725100BFDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E745BB2B2F725100BFDD05 /* Assets.xcassets */; };
@@ -38,6 +41,7 @@
 /* Begin PBXFileReference section */
 		2461F3782B2F92150084D4AA /* UserDetail */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UserDetail; path = "swiftui-spm-modular/UserDetail"; sourceTree = "<group>"; };
 		2461F37B2B2FA6380084D4AA /* Styleguide */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Styleguide; path = "swiftui-spm-modular/Styleguide"; sourceTree = "<group>"; };
+		2461F3812B2FAED80084D4AA /* Container+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Injection.swift"; sourceTree = "<group>"; };
 		24E745B42B2F724E00BFDD05 /* swiftui-spm-modular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-spm-modular.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E745B72B2F724E00BFDD05 /* swiftui_spm_modularApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_spm_modularApp.swift; sourceTree = "<group>"; };
 		24E745B92B2F724E00BFDD05 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
@@ -59,7 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2461F37E2B2FAE690084D4AA /* Factory in Frameworks */,
 				2461F37A2B2F93A60084D4AA /* UserDetail in Frameworks */,
+				2461F3842B2FB0080084D4AA /* Data in Frameworks */,
 				24E745E72B2F810100BFDD05 /* User in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2461F37F2B2FAE8B0084D4AA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				24E745B72B2F724E00BFDD05 /* swiftui_spm_modularApp.swift */,
+				24E745B92B2F724E00BFDD05 /* AppView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2461F3802B2FAEB80084D4AA /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				2461F3812B2FAED80084D4AA /* Container+Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		24E745AB2B2F724E00BFDD05 = {
 			isa = PBXGroup;
 			children = (
@@ -111,8 +134,8 @@
 		24E745B62B2F724E00BFDD05 /* swiftui-spm-modular */ = {
 			isa = PBXGroup;
 			children = (
-				24E745B72B2F724E00BFDD05 /* swiftui_spm_modularApp.swift */,
-				24E745B92B2F724E00BFDD05 /* AppView.swift */,
+				2461F3802B2FAEB80084D4AA /* DI */,
+				2461F37F2B2FAE8B0084D4AA /* App */,
 				24E745BB2B2F725100BFDD05 /* Assets.xcassets */,
 				24E745BD2B2F725100BFDD05 /* Preview Content */,
 			);
@@ -170,6 +193,8 @@
 			packageProductDependencies = (
 				24E745E62B2F810100BFDD05 /* User */,
 				2461F3792B2F93A60084D4AA /* UserDetail */,
+				2461F37D2B2FAE690084D4AA /* Factory */,
+				2461F3832B2FB0080084D4AA /* Data */,
 			);
 			productName = "swiftui-spm-modular";
 			productReference = 24E745B42B2F724E00BFDD05 /* swiftui-spm-modular.app */;
@@ -243,6 +268,9 @@
 				Base,
 			);
 			mainGroup = 24E745AB2B2F724E00BFDD05;
+			packageReferences = (
+				2461F37C2B2FAE690084D4AA /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = 24E745B52B2F724E00BFDD05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -285,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2461F3822B2FAED80084D4AA /* Container+Injection.swift in Sources */,
 				24E745BA2B2F724E00BFDD05 /* AppView.swift in Sources */,
 				24E745B82B2F724E00BFDD05 /* swiftui_spm_modularApp.swift in Sources */,
 			);
@@ -611,10 +640,30 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		2461F37C2B2FAE690084D4AA /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		2461F3792B2F93A60084D4AA /* UserDetail */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UserDetail;
+		};
+		2461F37D2B2FAE690084D4AA /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2461F37C2B2FAE690084D4AA /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		2461F3832B2FB0080084D4AA /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
 		};
 		24E745E62B2F810100BFDD05 /* User */ = {
 			isa = XCSwiftPackageProductDependency;

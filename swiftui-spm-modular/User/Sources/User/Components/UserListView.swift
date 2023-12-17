@@ -27,6 +27,8 @@ struct UserListView: View {
     }
 }
 
-#Preview {
-    UserListView(users: UserViewModel().users)
-}
+//#if DEBUG
+//#Preview {
+//    UserListView(users: Array(repeating: User.mock, count: 10))
+//}
+//#endif

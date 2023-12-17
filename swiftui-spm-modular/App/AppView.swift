@@ -8,6 +8,7 @@
 import SwiftUI
 import User
 import UserDetail
+import Factory
 
 struct AppView: View {
     
@@ -16,7 +17,7 @@ struct AppView: View {
     var body: some View {
         NavigationView(content: {
             ZStack(content: {
-                UserView(viewModel: UserViewModel())
+                UserView(viewModel: Container.shared.userViewModel())
                 NavigationLink("", isActive: $showingPaymentScreen) {
                     UserDetailView()
                 }

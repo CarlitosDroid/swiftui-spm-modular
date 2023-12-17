@@ -29,10 +29,10 @@ struct UserItemView: View {
     }
 }
 
-#if DEBUG
-struct UserItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserItemView(user: UserViewModel().users[0])
-    }
-}
-#endif
+//#if DEBUG
+//struct UserItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UserItemView(user: UserViewModel().users[0])
+//    }
+//}
+//#endif

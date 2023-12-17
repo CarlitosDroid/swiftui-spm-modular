@@ -11,6 +11,8 @@ import Domain
 @MainActor
 public final class UserViewModel: ObservableObject {
     
+    private let userRepositoryProtocol: UserRepositoryProtocol
+    
     @Published public private(set) var users: [User] = []
     
     public func fetchUsers() {
@@ -21,7 +23,8 @@ public final class UserViewModel: ObservableObject {
         ]
     }
     
-    public init() {
+    public init(userRepositoryProtocol: UserRepositoryProtocol) {
+        self.userRepositoryProtocol = userRepositoryProtocol
         fetchUsers()
     }
     

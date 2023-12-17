@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct User: Identifiable {
+public struct User: Identifiable, Equatable {
     public var id: String
     public let name: String
     public let age: Int
@@ -18,3 +18,10 @@ public struct User: Identifiable {
         self.age = age
     }
 }
+
+#if DEBUG
+public extension User {
+
+    static let mock = User(id: "1", name: "Carlos", age: 30)
+}
+#endif

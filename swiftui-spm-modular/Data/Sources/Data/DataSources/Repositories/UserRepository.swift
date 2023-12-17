@@ -8,7 +8,7 @@
 import Foundation
 import Domain
 
-public class UserRepository {
+public class UserRepository: UserRepositoryProtocol {
     
     private let userMemory: UserMemory
     
@@ -19,6 +19,7 @@ public class UserRepository {
     public func getUserFromMemory() -> [User] {
         return userMemory.usersData.map { (userData: UserData) in
             User(
+                id: "1",
                 name: userData.name,
                 age: userData.age
             )

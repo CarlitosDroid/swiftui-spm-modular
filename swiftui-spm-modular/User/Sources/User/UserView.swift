@@ -47,10 +47,17 @@ private extension UserView {
         } header: {
             Text("USER LIST HEADER")
         }
-
+        
     }
 }
 
-#Preview {
-    UserView(viewModel: UserViewModel())
-}
+//#Preview {
+//    let mockUserViewModel = Container.shared.userViewModel.register {
+//        UserViewModel(
+//            userRepositoryProtocol: UserRepository(
+//                userMemory: UserMemory()
+//            )
+//        )
+//    }
+//    UserView(viewModel: mockUserViewModel)
+//}
