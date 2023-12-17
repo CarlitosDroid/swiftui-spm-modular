@@ -46,6 +46,7 @@
 		24E745D42B2F725100BFDD05 /* swiftui_spm_modularUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_spm_modularUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		24E745E12B2F759600BFDD05 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		24E745E22B2F7A1F00BFDD05 /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Data; path = "swiftui-spm-modular/Data"; sourceTree = "<group>"; };
+		24E745E32B2F7C2500BFDD05 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Domain; path = "swiftui-spm-modular/Domain"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				24E745E12B2F759600BFDD05 /* .gitignore */,
+				24E745E32B2F7C2500BFDD05 /* Domain */,
 				24E745E22B2F7A1F00BFDD05 /* Data */,
 				24E745B62B2F724E00BFDD05 /* swiftui-spm-modular */,
 				24E745C72B2F725100BFDD05 /* swiftui-spm-modularTests */,
