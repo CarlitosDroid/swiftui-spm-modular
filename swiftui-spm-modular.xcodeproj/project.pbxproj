@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2461F37A2B2F93A60084D4AA /* UserDetail in Frameworks */ = {isa = PBXBuildFile; productRef = 2461F3792B2F93A60084D4AA /* UserDetail */; };
 		24E745B82B2F724E00BFDD05 /* swiftui_spm_modularApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745B72B2F724E00BFDD05 /* swiftui_spm_modularApp.swift */; };
 		24E745BA2B2F724E00BFDD05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745B92B2F724E00BFDD05 /* ContentView.swift */; };
 		24E745BC2B2F725100BFDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E745BB2B2F725100BFDD05 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2461F3782B2F92150084D4AA /* UserDetail */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UserDetail; path = "swiftui-spm-modular/UserDetail"; sourceTree = "<group>"; };
 		24E745B42B2F724E00BFDD05 /* swiftui-spm-modular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-spm-modular.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E745B72B2F724E00BFDD05 /* swiftui_spm_modularApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_spm_modularApp.swift; sourceTree = "<group>"; };
 		24E745B92B2F724E00BFDD05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2461F37A2B2F93A60084D4AA /* UserDetail in Frameworks */,
 				24E745E72B2F810100BFDD05 /* User in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +85,7 @@
 			children = (
 				24E745E12B2F759600BFDD05 /* .gitignore */,
 				24E745E42B2F7EAB00BFDD05 /* User */,
+				2461F3782B2F92150084D4AA /* UserDetail */,
 				24E745E32B2F7C2500BFDD05 /* Domain */,
 				24E745E22B2F7A1F00BFDD05 /* Data */,
 				24E745B62B2F724E00BFDD05 /* swiftui-spm-modular */,
@@ -163,6 +167,7 @@
 			name = "swiftui-spm-modular";
 			packageProductDependencies = (
 				24E745E62B2F810100BFDD05 /* User */,
+				2461F3792B2F93A60084D4AA /* UserDetail */,
 			);
 			productName = "swiftui-spm-modular";
 			productReference = 24E745B42B2F724E00BFDD05 /* swiftui-spm-modular.app */;
@@ -605,6 +610,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2461F3792B2F93A60084D4AA /* UserDetail */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UserDetail;
+		};
 		24E745E62B2F810100BFDD05 /* User */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = User;
