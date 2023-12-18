@@ -15,12 +15,12 @@ final class GetUserFromMemoryUseCaseSpec: QuickSpec {
     override class func spec() {
         var userRepository: UserRepositoryProtocol!
         
-        describe("The GetUserFromMemoyUseCase") {
-            
-            beforeEach {
-                userRepository = 
-            }
-            
-        }
+//        describe("The GetUserFromMemoyUseCase") {
+//            
+//            beforeEach {
+//                userRepository = 
+//            }
+//            
+//        }
     }
 }
