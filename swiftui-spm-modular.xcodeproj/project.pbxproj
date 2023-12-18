@@ -11,6 +11,7 @@
 		2461F37E2B2FAE690084D4AA /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 2461F37D2B2FAE690084D4AA /* Factory */; };
 		2461F3822B2FAED80084D4AA /* Container+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2461F3812B2FAED80084D4AA /* Container+Injection.swift */; };
 		2461F3842B2FB0080084D4AA /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 2461F3832B2FB0080084D4AA /* Data */; };
+		2461F3882B2FEE920084D4AA /* ShowTime in Frameworks */ = {isa = PBXBuildFile; productRef = 2461F3872B2FEE920084D4AA /* ShowTime */; };
 		24E745B82B2F724E00BFDD05 /* swiftui_spm_modularApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745B72B2F724E00BFDD05 /* swiftui_spm_modularApp.swift */; };
 		24E745BA2B2F724E00BFDD05 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E745B92B2F724E00BFDD05 /* AppView.swift */; };
 		24E745BC2B2F725100BFDD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E745BB2B2F725100BFDD05 /* Assets.xcassets */; };
@@ -42,7 +43,8 @@
 		2461F3782B2F92150084D4AA /* UserDetail */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UserDetail; path = "swiftui-spm-modular/UserDetail"; sourceTree = "<group>"; };
 		2461F37B2B2FA6380084D4AA /* Styleguide */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Styleguide; path = "swiftui-spm-modular/Styleguide"; sourceTree = "<group>"; };
 		2461F3812B2FAED80084D4AA /* Container+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Injection.swift"; sourceTree = "<group>"; };
-		24E745B42B2F724E00BFDD05 /* swiftui-spm-modular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-spm-modular.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2461F3852B2FE5010084D4AA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		24E745B42B2F724E00BFDD05 /* swiftui-spm-modular Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-spm-modular Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E745B72B2F724E00BFDD05 /* swiftui_spm_modularApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_spm_modularApp.swift; sourceTree = "<group>"; };
 		24E745B92B2F724E00BFDD05 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		24E745BB2B2F725100BFDD05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2461F37E2B2FAE690084D4AA /* Factory in Frameworks */,
+				2461F3882B2FEE920084D4AA /* ShowTime in Frameworks */,
 				2461F37A2B2F93A60084D4AA /* UserDetail in Frameworks */,
 				2461F3842B2FB0080084D4AA /* Data in Frameworks */,
 				24E745E72B2F810100BFDD05 /* User in Frameworks */,
@@ -107,6 +110,7 @@
 		24E745AB2B2F724E00BFDD05 = {
 			isa = PBXGroup;
 			children = (
+				2461F3852B2FE5010084D4AA /* README.md */,
 				24E745E12B2F759600BFDD05 /* .gitignore */,
 				2461F37B2B2FA6380084D4AA /* Styleguide */,
 				24E745E42B2F7EAB00BFDD05 /* User */,
@@ -124,7 +128,7 @@
 		24E745B52B2F724E00BFDD05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24E745B42B2F724E00BFDD05 /* swiftui-spm-modular.app */,
+				24E745B42B2F724E00BFDD05 /* swiftui-spm-modular Debug.app */,
 				24E745C42B2F725100BFDD05 /* swiftui-spm-modularTests.xctest */,
 				24E745CE2B2F725100BFDD05 /* swiftui-spm-modularUITests.xctest */,
 			);
@@ -195,9 +199,10 @@
 				2461F3792B2F93A60084D4AA /* UserDetail */,
 				2461F37D2B2FAE690084D4AA /* Factory */,
 				2461F3832B2FB0080084D4AA /* Data */,
+				2461F3872B2FEE920084D4AA /* ShowTime */,
 			);
 			productName = "swiftui-spm-modular";
-			productReference = 24E745B42B2F724E00BFDD05 /* swiftui-spm-modular.app */;
+			productReference = 24E745B42B2F724E00BFDD05 /* swiftui-spm-modular Debug.app */;
 			productType = "com.apple.product-type.application";
 		};
 		24E745C32B2F725100BFDD05 /* swiftui-spm-modularTests */ = {
@@ -270,6 +275,7 @@
 			mainGroup = 24E745AB2B2F724E00BFDD05;
 			packageReferences = (
 				2461F37C2B2FAE690084D4AA /* XCRemoteSwiftPackageReference "Factory" */,
+				2461F3862B2FEE920084D4AA /* XCRemoteSwiftPackageReference "ShowTime" */,
 			);
 			productRefGroup = 24E745B52B2F724E00BFDD05 /* Products */;
 			projectDirPath = "";
@@ -352,6 +358,142 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2461F3892B2FF2790084D4AA /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Staging";
+		};
+		2461F38A2B2FF2790084D4AA /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStage;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"swiftui-spm-modular/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.swiftui-spm-modular.staging";
+				PRODUCT_NAME = "$(TARGET_NAME) Staging";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug Staging";
+		};
+		2461F38B2B2FF2790084D4AA /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.swiftui-spm-modularTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui-spm-modular.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swiftui-spm-modular";
+			};
+			name = "Debug Staging";
+		};
+		2461F38C2B2FF2790084D4AA /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.swiftui-spm-modularUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = "swiftui-spm-modular";
+			};
+			name = "Debug Staging";
+		};
 		24E745D62B2F725100BFDD05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -474,7 +616,7 @@
 		24E745D92B2F725100BFDD05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDebug;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -484,18 +626,21 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.swiftui-spm-modular";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.swiftui-spm-modular.debug";
+				PRODUCT_NAME = "$(TARGET_NAME) Debug";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -512,8 +657,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,9 +666,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.swiftui-spm-modular";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -539,9 +687,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.swiftui-spm-modularTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui-spm-modular.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swiftui-spm-modular";
 			};
 			name = Debug;
@@ -558,9 +709,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.swiftui-spm-modularTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui-spm-modular.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swiftui-spm-modular";
 			};
 			name = Release;
@@ -575,9 +729,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.swiftui-spm-modularUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = "swiftui-spm-modular";
 			};
 			name = Debug;
@@ -592,9 +749,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.swiftui-spm-modularUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = "swiftui-spm-modular";
 			};
 			name = Release;
@@ -606,6 +766,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24E745D62B2F725100BFDD05 /* Debug */,
+				2461F3892B2FF2790084D4AA /* Debug Staging */,
 				24E745D72B2F725100BFDD05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -615,6 +776,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24E745D92B2F725100BFDD05 /* Debug */,
+				2461F38A2B2FF2790084D4AA /* Debug Staging */,
 				24E745DA2B2F725100BFDD05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -624,6 +786,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24E745DC2B2F725100BFDD05 /* Debug */,
+				2461F38B2B2FF2790084D4AA /* Debug Staging */,
 				24E745DD2B2F725100BFDD05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -633,6 +796,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24E745DF2B2F725100BFDD05 /* Debug */,
+				2461F38C2B2FF2790084D4AA /* Debug Staging */,
 				24E745E02B2F725100BFDD05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -647,6 +811,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.3.1;
+			};
+		};
+		2461F3862B2FEE920084D4AA /* XCRemoteSwiftPackageReference "ShowTime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KaneCheshire/ShowTime";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -664,6 +836,11 @@
 		2461F3832B2FB0080084D4AA /* Data */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Data;
+		};
+		2461F3872B2FEE920084D4AA /* ShowTime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2461F3862B2FEE920084D4AA /* XCRemoteSwiftPackageReference "ShowTime" */;
+			productName = ShowTime;
 		};
 		24E745E62B2F810100BFDD05 /* User */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -1,6 +1,6 @@
 //
 //  UserRepository.swift
-//  
+//
 //
 //  Created by Carlos Leonardo Camilo Vargas Huaman on 17/12/23.
 //
@@ -16,7 +16,7 @@ public class UserRepository: UserRepositoryProtocol {
         self.userMemory = userMemory
     }
     
-    public func getUserFromMemory() -> [User] {
+    public func getUsersFromMemory() -> [User] {
         return userMemory.usersData.map { (userData: UserData) in
             User(
                 id: "1",
@@ -26,12 +26,24 @@ public class UserRepository: UserRepositoryProtocol {
         }
     }
     
-    public func getUserFromDataBase() -> [User] {
+    public func getUserFromMemory(id: String) -> User? {
+        
+        let userData = userMemory.usersData[0]
+        let user = User(
+            id: userData.id,
+            name: userData.name,
+            age: userData.age
+        )
+        
+        return user
+    }
+    
+    public func getUsersFromDataBase() -> [User] {
         return []
     }
     
-    public func getUserFromRemote() -> [User] {
+    public func getUsersFromRemote() -> [User] {
         return []
     }
-        
+    
 }

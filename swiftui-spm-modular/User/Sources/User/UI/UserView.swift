@@ -34,7 +34,7 @@ public struct UserView: View {
 private extension UserView {
     var headerSection: some View {
         Section {
-            Text("Welcome!")
+            Text(Strings.User.Welcome.text)
                 .multilineTextAlignment(.center)
                 .font(Fonts.Inter.semiBold.swiftUIFont(size: 32))
             UserGreetingView()
@@ -45,7 +45,7 @@ private extension UserView {
         Section {
             UserListView(users: viewModel.users)
         } header: {
-            Text("USER LIST HEADER")
+            Text(Strings.User.List.Header.text)
         }
         
     }

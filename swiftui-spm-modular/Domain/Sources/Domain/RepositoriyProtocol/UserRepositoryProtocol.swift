@@ -8,7 +8,8 @@
 import Foundation
 
 public protocol UserRepositoryProtocol {
-    func getUserFromMemory() -> [User]
-    func getUserFromDataBase() -> [User]
-    func getUserFromRemote() -> [User]
+    func getUsersFromMemory() -> [User]
+    func getUserFromMemory(id: String) -> User?
+    func getUsersFromDataBase() -> [User]
+    func getUsersFromRemote() -> [User]
 }

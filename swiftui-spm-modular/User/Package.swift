@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "User",
+    defaultLocalization: "en",
     platforms: [.iOS(.v15)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
@@ -15,6 +16,7 @@ let package = Package(
     dependencies: [
         .package(name: "Domain", path: "../Domain"),
         .package(name: "Styleguide", path: "../Styleguide"),
+        .package(url: "https://github.com/SwiftGen/SwiftGenPlugin", from: "6.6.2")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -24,6 +26,9 @@ let package = Package(
             dependencies: [
                 .product(name: "Domain", package: "Domain"),
                 .product(name: "Styleguide", package: "Styleguide"),
+            ],
+            plugins: [
+                .plugin(name: "SwiftGenPlugin", package: "SwiftGenPlugin")
             ]
         ),
         .testTarget(
